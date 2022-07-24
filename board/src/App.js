@@ -31,5 +31,5 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     width: 100%;
     font-family: 'NanumSquare';;
-  } `;
+} `;
 export default App;

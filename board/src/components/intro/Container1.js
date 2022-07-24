@@ -13,7 +13,6 @@ const Container1 = () => {
 					<LoginIcon />
 				</Link>
 				<Link to='/signup'>
-					{' '}
 					<SignupIcon />
 				</Link>
 			</ButtonWrapper>
