@@ -10,7 +10,9 @@ const Intro = () => {
 			<Container1 />
 			<Container2 />
 			<Container3 />
-			<PostsContainer />
+			<PostsWrapper>
+				<PostsContainer />
+			</PostsWrapper>
 			<Footer />
 		</Wrapper>
 	);
@@ -18,5 +20,8 @@ const Intro = () => {
 const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
+`;
+const PostsWrapper = styled.div`
+	background-color: #eaf2ce;
 `;
 export default Intro;

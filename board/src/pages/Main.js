@@ -6,13 +6,18 @@ import Footer from '../components/Footer';
 
 const Main = () => {
 	return (
-		<Wrapper>
+		<>
 			<Header />
 			<MainTop />
-			<PostsContainer />
+			<PostsWrapper>
+				<PostsContainer />
+			</PostsWrapper>
 			<Footer />
-		</Wrapper>
+		</>
 	);
 };
-const Wrapper = styled.div``;
+
+const PostsWrapper = styled.div`
+	background-color: #eaf2ce;
+`;
 export default Main;

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ReactComponent as Background } from '../../static/background.svg';
+import { ReactComponent as Background } from '../../static/background2.svg';
 import { BsSearch } from 'react-icons/bs';
 const MainTop = () => {
 	return (
@@ -17,14 +17,16 @@ const Wrapper = styled.div`
 	display: flex;
 	justify-content: center;
 	width: 100%;
-	height: 1020px;
+	height: 920px;
 	background-color: #d2d8c7;
 	.background {
 		position: absolute;
-		top: 300px;
+		top: 165px;
 	}
 `;
 const SearchBarWrapper = styled.div`
+	position: absolute;
+	z-index: 2;
 	width: 620px;
 	height: 62px;
 	display: flex;
@@ -45,7 +47,7 @@ const SearchBar = styled.input`
 	border: none;
 	outline: none;
 	padding-left: 10px;
-	font-size: 30px;
+	font-size: 25px;
 	color: #707365;
 `;
 export default MainTop;
