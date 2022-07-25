@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import React, { useState, useEffect } from 'react';
 import data from '../data.json';
+import { Link } from 'react-router-dom';
 
 const PostsContainer = () => {
 	const [posts, setPosts] = useState([]);
@@ -18,11 +19,13 @@ const PostsContainer = () => {
 			<PostWrapper>
 				{posts.map(post => (
 					<PostBox key={post.id}>
-						<PostPicture>
-							<img src={post.picture} />
-						</PostPicture>
-						<PostTitle>{post.title}</PostTitle>
-						<PostDate>{post.created}</PostDate>
+						<Link to='/read'>
+							<PostPicture>
+								<img src={post.picture} />
+							</PostPicture>
+							<PostTitle>{post.title}</PostTitle>
+							<PostDate>{post.created}</PostDate>
+						</Link>
 					</PostBox>
 				))}
 			</PostWrapper>
@@ -49,6 +52,15 @@ const Wrapper = styled.div`
 	overflow-y: hidden;
 	display: flex;
 	align-items: center;
+	a {
+		text-decoration: none;
+		color: black;
+		height: 480px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+	}
 	::-webkit-scrollbar {
 		display: none;
 	}
@@ -61,10 +73,6 @@ const PostWrapper = styled.div`
 `;
 
 const PostBox = styled.div`
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
 	width: 396px;
 	height: 480px;
 	background-color: white;

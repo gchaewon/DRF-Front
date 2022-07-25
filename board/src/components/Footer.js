@@ -14,6 +14,7 @@ const Wrapper = styled.div`
 	background-color: #707365;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 `;
 
 export default Footer;

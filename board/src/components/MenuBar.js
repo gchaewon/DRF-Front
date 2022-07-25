@@ -7,7 +7,7 @@ const MenuBar = () => {
 			<TextWrapper>
 				<Link to='/write'>글 작성</Link>
 				<p>My Page</p>
-				<p>로그아웃</p>
+				<Link to='/'>로그아웃</Link>
 			</TextWrapper>
 			<MenuContainer className='menuContainer'></MenuContainer>
 		</Wrapper>
@@ -31,7 +31,7 @@ const TextWrapper = styled.div`
 	justify-content: center;
 	text-align: center;
 	z-index: 2;
-	width: 270px;
+	width: 180px;
 	height: 190px;
 	a,
 	p {
