@@ -1,5 +1,6 @@
 # DRF-Frontend
-## 기능
+## 기능 ▽ 구현 영상
+[![구현영상](http://img.youtube.com/vi/0aAfjSVYQPc/0.jpg)](https://youtu.be/0aAfjSVYQPc)
 ###  1. 로그인 & 회원 가입 (Login & Signup)
 아이디 조건, 비밀번호 조건을 충족하는 경우에 회원 가입 가능 -> 회원 가입 후에 로그인 페이지로 이동하여 로그인<br/>
 백 연동 시에 input을 넘겨줘서 검사 후 로그인 하는 기능은 추후 구현
@@ -12,4 +13,3 @@
 하단의 글 목록을 클릭했을 때, 다른 글로 이동 가능 
 ### 4. 글 작성 페이지 (Write)
 wysiwyg editor를 가져와서 사용, img를 넣는 기능 & 발행 기능은 추후 구현 
-## 사용툴
