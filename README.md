@@ -1,5 +1,6 @@
 # DRF-Frontend
-## 기능 ▽ 구현 영상
+## 기능
+### 구현 영상
 [![구현영상](http://img.youtube.com/vi/0aAfjSVYQPc/0.jpg)](https://youtu.be/0aAfjSVYQPc)
 ###  1. 로그인 & 회원 가입 (Login & Signup)
 아이디 조건, 비밀번호 조건을 충족하는 경우에 회원 가입 가능 -> 회원 가입 후에 로그인 페이지로 이동하여 로그인<br/>
