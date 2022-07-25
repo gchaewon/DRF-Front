@@ -30,6 +30,6 @@ const GlobalStyle = createGlobalStyle`
   *{
     margin: 0;
     width: 100%;
-    font-family: 'NanumSquare';;
+    font-family: 'NanumSquare';
 } `;
 export default App;

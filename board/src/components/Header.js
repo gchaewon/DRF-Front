@@ -4,7 +4,6 @@ import { ReactComponent as LogoIcon } from '../static/logoIcon.svg';
 import { BsFillPersonFill } from 'react-icons/bs';
 import { ReactComponent as MenuIcon } from '../static/menuIcon.svg';
 import MenuBar from './MenuBar';
-import DATA from './../data';
 
 const Header = () => {
 	let [modal, setModal] = useState(false);
@@ -13,7 +12,7 @@ const Header = () => {
 			<LogoIcon className='logoIcon' />
 			<HeaderRight>
 				<UserId>
-					<p>{DATA[2].id}</p>
+					<p>dvvyun</p>
 					<p>님</p>
 				</UserId>
 				<UserIcon>
