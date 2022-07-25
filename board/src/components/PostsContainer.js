@@ -33,17 +33,6 @@ const PostsContainer = () => {
 	);
 };
 
-// {posts
-// 	.filter(post => post.id < postsLength)
-// 	.map(post => (
-// 		<PostBox key={post.id}>
-// 			<PostPicture>
-// 				<img src={post.picture} width='343.33px' height='247.4px' />
-// 			</PostPicture>
-// 			<PostTitle>{post.title}</PostTitle>
-// 			<PostBody>{post.day}</PostBody>
-// 		</PostBox>
-// 	))}
 const Wrapper = styled.div`
 	height: 600px;
 	background-color: transparent;

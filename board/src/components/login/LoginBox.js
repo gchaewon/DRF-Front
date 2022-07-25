@@ -65,7 +65,6 @@ const KeepLogin = styled.div`
 const LoginBtn = styled.div`
 	width: 493px;
 	height: 50px;
-	margin-left: 67px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
