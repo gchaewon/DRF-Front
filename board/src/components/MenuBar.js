@@ -6,7 +6,7 @@ const MenuBar = () => {
 		<Wrapper>
 			<TextWrapper>
 				<Link to='/write'>글 작성</Link>
-				<p>My Page</p>
+				<Link to='/main'>Main Page</Link>
 				<Link to='/'>로그아웃</Link>
 			</TextWrapper>
 			<MenuContainer className='menuContainer'></MenuContainer>

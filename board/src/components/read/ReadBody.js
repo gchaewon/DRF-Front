@@ -5,7 +5,17 @@ import G7 from '../../static/Group7.png';
 import data from '../../data.json';
 //import { getSpaceUntilMaxLength } from "@testing-library/user-event/dist/utils";
 
-const ReadBody = props => {
+const todayTime = () => {
+	const now = new Date();
+	const year = now.getFullYear();
+	const month =
+		now.getMonth() + 1 > 9 ? now.getMonth() + 1 : '0' + (now.getMonth() + 1);
+	const date = now.getDate() + 1 > 9 ? now.getDate() : '0' + now.getDate();
+
+	return year + '.' + month + '.' + date;
+};
+
+const ReadBody = index => {
 	const [input, setInput] = useState();
 	const [comments, setComments] = useState([]);
 
@@ -23,6 +33,7 @@ const ReadBody = props => {
 			})
 		);
 	};
+
 	return (
 		<BodyDiv>
 			<ReadDiv>
@@ -83,11 +94,12 @@ const ReadBody = props => {
 						<ReplMyInfo2>(나)</ReplMyInfo2>
 					</ReplMyInfo>
 					<WriteRepl>
-						<input
+						<Input
 							value={input}
 							onChange={onChange}
 							placeholder='댓글을 입력해주세요.'
-						></input>
+						/>
+
 						<ReplButton
 							onClick={() => {
 								addComment(input);
@@ -253,13 +265,13 @@ const WriteRepl = styled.div`
 	bottom: 27px;
 	top: 91px;
 	background: #ffffff;
-	input {
-		background-color: transparent;
-		border-style: none;
-		outline: none;
-		padding: 10px;
-		font-size: 18px;
-	}
+`;
+
+const Input = styled.input`
+	all: unset;
+	width: 80%;
+	outline: none;
+	height: 36px;
 `;
 
 const ReplButton = styled.div`
@@ -452,13 +464,3 @@ const Repl = styled.div`
 	border-radius: 68px;
 	margin-top: 34px;
 `;
-
-const todayTime = () => {
-	const now = new Date();
-	const year = now.getFullYear();
-	const month =
-		now.getMonth() + 1 > 9 ? now.getMonth() + 1 : '0' + (now.getMonth() + 1);
-	const date = now.getDate() + 1 > 9 ? now.getDate() : '0' + now.getDate();
-
-	return year + '.' + month + '.' + date;
-};

@@ -18,6 +18,25 @@ const EditorWrapper = styled.div`
 		padding-left: 20px;
 	}
 `;
+
+const InputTitle = styled.input`
+	all: unset;
+	width: 50%;
+	outline: none;
+	height: 36px;
+	border-bottom: 1px solid #111111;
+	margin-bottom: 50px;
+`;
+
+const InputCon = styled.input`
+	all: unset;
+	width: 80%;
+	outline: none;
+	height: 36px;
+	border-bottom: 1px solid #000000;
+	margin-bottom: 20px;
+`;
+
 export default class TextEditor extends Component {
 	state = {
 		editorState: EditorState.createEmpty(),
@@ -32,6 +51,7 @@ export default class TextEditor extends Component {
 	render() {
 		const { editorState } = this.state;
 		console.log(draftToHtml(convertToRaw(editorState.getCurrentContent())));
+
 		return (
 			<EditorWrapper>
 				<Editor
@@ -41,6 +61,31 @@ export default class TextEditor extends Component {
 					editorClassName='editorClassName'
 					onEditorStateChange={this.onEditorStateChange}
 				/>
+				<InputTitle placeholder='제목을 입력하세요' />
+				<InputCon placeholder='글 내용을 입력하세요' />
+				<InputCon />
+				<InputCon />
+				<InputCon />
+				<InputCon />
+				<InputCon />
+				<InputCon />
+				<InputCon />
+				<InputCon />
+				<InputCon />
+				<InputCon />
+				<InputCon />
+				<InputCon />
+				<InputCon />
+				<InputCon />
+				<InputCon />
+				<InputCon />
+				<InputCon />
+				<InputCon />
+				<InputCon />
+				<InputCon />
+				<InputCon />
+				<InputCon />
+				<InputCon />
 			</EditorWrapper>
 		);
 	}

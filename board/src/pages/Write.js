@@ -2,12 +2,19 @@ import styled from 'styled-components';
 import { ReactComponent as LogoIcon } from '../static/logoIcon.svg';
 import { ReactComponent as UploadBtnIcon } from '../static/uploadBtn.svg';
 import TextEditor from '../components/write/TextEditor';
+import { useNavigate } from 'react-router-dom';
 
 const Write = () => {
+	const navigate = useNavigate();
 	return (
 		<Wrapper>
 			<WriteHeader>
-				<LogoIcon className='logoIcon' />
+				<LogoIcon
+					className='logoIcon'
+					onClick={() => {
+						navigate('/main');
+					}}
+				/>
 				<UploadBtnIcon className='uploadBtn' />
 			</WriteHeader>
 			<TextEditor />
